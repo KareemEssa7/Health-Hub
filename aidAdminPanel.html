@@ -1,1211 +1,1208 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Health Hub || لوحة التحكم</title>
 
-    <!-- Page Logo -->
-    <link rel="icon" type="image/x-icon" href="Images/Favicon.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Health Hub || لوحة التحكم</title>
 
-    <!-- DataTable CDN CSS -->
-    <link rel="stylesheet" href="Css/bootstrap_452.min.css" />
-    <link rel="stylesheet" href="Css/dataTables_bootstrap4.min.css" />
-    <!-- Font Awesome Page -->
-    <link rel="stylesheet" href="Css/all.min.css" />
-    <!-- Global Style Page -->
-    <link rel="stylesheet" href="Css/global.css" />
-    <!-- Main Style Page -->
-    <link rel="stylesheet" href="Css/home.css" />
-    <!-- Main Style Page -->
-    <link rel="stylesheet" href="Css/adminGlobal.css" />
-  </head>
-  <body>
-    <main>
-      <!-- Start Header -->
-      <header>
-        <div class="container">
-          <div class="burger-list">
-            <span></span>
-            <span></span>
-            <span></span>
+  <!-- Page Logo -->
+  <link rel="icon" type="image/x-icon" href="Images/Favicon.png" />
+
+  <!-- DataTable CDN CSS -->
+  <link rel="stylesheet" href="Css/bootstrap_452.min.css" />
+  <link rel="stylesheet" href="Css/dataTables_bootstrap4.min.css" />
+  <!-- Font Awesome Page -->
+  <link rel="stylesheet" href="Css/all.min.css" />
+  <!-- Global Style Page -->
+  <link rel="stylesheet" href="Css/global.css" />
+  <!-- Main Style Page -->
+  <link rel="stylesheet" href="Css/home.css" />
+  <!-- Main Style Page -->
+  <link rel="stylesheet" href="Css/adminGlobal.css" />
+</head>
+
+<body>
+  <main>
+    <!-- Start Header -->
+    <header>
+      <div class="container">
+        <div class="burger-list">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <img class="logo" src="Images/Logo.png" alt="Health Hub Logo" />
+        <ul class="menu-bar">
+          <li><a href="index.html">الرئيسية</a></li>
+          <li>
+            <a href="firstAid.html">الإسعافات الأولية</a>
+            <i class="fa-solid fa-angle-down"></i>
+            <div class="drop-down-menu">
+              <ul>
+                <li><a href="FirstAidView.html">الإختناق</a></li>
+                <li><a href="FirstAidView.html">الجروح</a></li>
+                <li><a href="FirstAidView.html">الحروق</a></li>
+                <li><a href="FirstAidView.html">عضة الحيوانات</a></li>
+                <li><a href="FirstAidView.html">الإنعاش القلبي الرئوي</a></li>
+              </ul>
+              <ul>
+                <li><a href="FirstAidView.html">الإختناق</a></li>
+                <li><a href="FirstAidView.html">الجروح</a></li>
+                <li><a href="FirstAidView.html">الكسور</a></li>
+                <li><a href="FirstAidView.html">عضة الحيوانات</a></li>
+                <li><a href="FirstAidView.html">الإنعاش القلبي الرئوي</a></li>
+              </ul>
+              <a href="firstAid.html">المزيد<i class="fa-solid fa-angles-left"></i></a>
+            </div>
+          </li>
+          <li><a href="donateBlood.html">التبرع بالدم</a></li>
+          <li><a href="donateMedicine.html">التبرع بالأدوية</a></li>
+        </ul>
+        <div class="login-btns">
+          <a href="register.html">إنشاء حساب</a>
+          <a href="login.html">تسجيل الدخول</a>
+        </div>
+        <div class="user">
+          <div class="user-info">
+            <i class="fa-solid fa-angle-down"></i>
+            <span>Mohamed Elsmin</span>
+            <img src="Images/User.png" alt="User Image" />
           </div>
-          <img class="logo" src="Images/Logo.png" alt="Health Hub Logo" />
-          <ul class="menu-bar">
-            <li><a href="index.html">الرئيسية</a></li>
+          <ul>
             <li>
-              <a href="firstAid.html">الإسعافات الأولية</a>
-              <i class="fa-solid fa-angle-down"></i>
-              <div class="drop-down-menu">
-                <ul>
-                  <li><a href="FirstAidView.html">الإختناق</a></li>
-                  <li><a href="FirstAidView.html">الجروح</a></li>
-                  <li><a href="FirstAidView.html">الحروق</a></li>
-                  <li><a href="FirstAidView.html">عضة الحيوانات</a></li>
-                  <li><a href="FirstAidView.html">الإنعاش القلبي الرئوي</a></li>
-                </ul>
-                <ul>
-                  <li><a href="FirstAidView.html">الإختناق</a></li>
-                  <li><a href="FirstAidView.html">الجروح</a></li>
-                  <li><a href="FirstAidView.html">الكسور</a></li>
-                  <li><a href="FirstAidView.html">عضة الحيوانات</a></li>
-                  <li><a href="FirstAidView.html">الإنعاش القلبي الرئوي</a></li>
-                </ul>
-                <a href="firstAid.html"
-                  >المزيد<i class="fa-solid fa-angles-left"></i
-                ></a>
-              </div>
+              <a href="aidAdminPanel.html">
+                <i class="fa-solid fa-sliders"></i>
+                لوحة التحكم
+              </a>
             </li>
-            <li><a href="donateBlood.html">التبرع بالدم</a></li>
-            <li><a href="donateMedicine.html">التبرع بالأدوية</a></li>
-          </ul>
-          <div class="login-btns">
-            <a href="register.html">إنشاء حساب</a>
-            <a href="login.html">تسجيل الدخول</a>
-          </div>
-          <div class="user">
-            <div class="user-info">
-              <i class="fa-solid fa-angle-down"></i>
-              <span>Mohamed Elsmin</span>
-              <img src="Images/User.png" alt="User Image" />
-            </div>
-            <ul>
-              <li>
-                <a href="aidAdminPanel.html">
-                  <i class="fa-solid fa-sliders"></i>
-                  لوحة التحكم
-                </a>
-              </li>
-              <li>
-                <a href="adminPage.html">
-                  <i class="fa-solid fa-user"></i>
-                  الصفحة الشخصية
-                </a>
-              </li>
-              <li>
-                <a href="favourite.html">
-                  <i class="fa-regular fa-heart"></i>
-                  المفضلة
-                </a>
-              </li>
-              <li>
-                <form action="">
-                  <button>
-                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                    تسجيل الخروج
-                  </button>
-                </form>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </header>
-      <!-- End Header -->
-      <div class="main-page">
-        <!-- Start SideBar Menu -->
-        <div class="sidebar">
-          <div class="header">
-            <h4>لوحة التحكم</h4>
-            <div class="sidebar-buger">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-
-          <ul class="sidebar-links">
-            <li class="admin-page">
+            <li>
               <a href="adminPage.html">
-                <span>الصفحة الشخصية</span>
-                <img src="Images/User.png" alt="User Image" />
+                <i class="fa-solid fa-user"></i>
+                الصفحة الشخصية
               </a>
             </li>
-            <li class="active" id="main-list">
-              <div class="link-title">
-                <i class="fa-solid fa-suitcase-medical"></i>
-                <span>الإسعافات الأولية</span>
-              </div>
-              <i class="fa-solid fa-angle-left"></i>
+            <li>
+              <a href="favourite.html">
+                <i class="fa-regular fa-heart"></i>
+                المفضلة
+              </a>
             </li>
-            <ul class="sub-lists">
-              <li>
-                <a href="#">
-                  <i class="fa-solid fa-pen-to-square"></i>
-                  <span>صفحه وهمية</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa-solid fa-pen-to-square"></i>
-                  <span>صفحه وهمية</span>
-                </a>
-              </li>
-            </ul>
-            <li id="main-list">
-              <div class="link-title">
-                <i class="fa-solid fa-suitcase-medical"></i>
-                <span>التبرع بالأدوية</span>
-              </div>
-              <i class="fa-solid fa-angle-left"></i>
+            <li>
+              <form action="">
+                <button>
+                  <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                  تسجيل الخروج
+                </button>
+              </form>
             </li>
-            <ul class="sub-lists">
-              <li>
-                <a href="medicineAdminPanel.html">
-                  <i class="fa-solid fa-pen-to-square"></i>
-                  <span>صفحه وهمية</span>
-                </a>
-              </li>
-              <li>
-                <a href="medicineAdminPanel.html">
-                  <i class="fa-solid fa-pen-to-square"></i>
-                  <span>صفحه وهمية</span>
-                </a>
-              </li>
-            </ul>
           </ul>
         </div>
-        <!-- End SideBar Menu -->
-
-        <!-- Start Page Content -->
-        <div class="content">
-          <h1 class="content-header">الإسعافات الأولية</h1>
-          <div class="content-container">
-            <div class="table-header">
-              <a href="addInfoAdminPanel.html" class="btn-add">
-                <i class="fa-solid fa-plus"></i>
-                <span>إضافة عنصر</span>
-              </a>
-              <!-- Start Search Bar -->
-              <div class="searcher">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" id="searchInput" placeholder="بحث" />
-                <a href="#">إبحث</a>
-              </div>
-              <!-- End Search Bar -->
-            </div>
-            <!-- Start DataTable -->
-            <table
-              id="example"
-              class="table table-striped table-bordered"
-              style="width: 100%"
-            >
-              <thead>
-                <tr>
-                  <th></th>
-                  <th></th>
-                  <th>الإسم</th>
-                  <th>الصورة</th>
-                  <th>المقال</th>
-                  <th>المشاهدات</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="addInfoAdminPanel.html" class="edit-btn">
-                      <i class="fa-solid fa-pen"></i>
-                    </a>
-                  </td>
-                  <td>
-                    <span class="delete-btn">
-                      <i class="fa-solid fa-trash-can"></i>
-                    </span>
-                  </td>
-                  <td>إصابات الأسنان</td>
-                  <td><img src="Images/1.png" alt="" srcset="" /></td>
-                  <td>
-                    تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
-                    الأطفال
-                  </td>
-                  <td>51</td>
-                </tr>
-              </tbody>
-            </table>
-            <!-- End DataTable -->
+      </div>
+    </header>
+    <!-- End Header -->
+    <div class="main-page">
+      <!-- Start SideBar Menu -->
+      <div class="sidebar">
+        <div class="header">
+          <h4>لوحة التحكم</h4>
+          <div class="sidebar-buger">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </div>
-        <!-- End Page Content -->
-      </div>
-    </main>
 
-    <!-- Start Scroll To Top -->
-    <span class="scroll-top">
-      <i class="fa-solid fa-angle-up"></i>
+        <ul class="sidebar-links">
+          <li class="admin-page">
+            <a href="adminPage.html">
+              <span>الصفحة الشخصية</span>
+              <img src="Images/User.png" alt="User Image" />
+            </a>
+          </li>
+          <li class="active" id="main-list">
+            <div class="link-title">
+              <i class="fa-solid fa-suitcase-medical"></i>
+              <span>الإسعافات الأولية</span>
+            </div>
+            <i class="fa-solid fa-angle-left"></i>
+          </li>
+          <ul class="sub-lists">
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-pen-to-square"></i>
+                <span>صفحه وهمية</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-pen-to-square"></i>
+                <span>صفحه وهمية</span>
+              </a>
+            </li>
+          </ul>
+          <li id="main-list">
+            <div class="link-title">
+              <i class="fa-solid fa-suitcase-medical"></i>
+              <span>التبرع بالأدوية</span>
+            </div>
+            <i class="fa-solid fa-angle-left"></i>
+          </li>
+          <ul class="sub-lists">
+            <li>
+              <a href="medicineAdminPanel.html">
+                <i class="fa-solid fa-pen-to-square"></i>
+                <span>صفحه وهمية</span>
+              </a>
+            </li>
+            <li>
+              <a href="medicineAdminPanel.html">
+                <i class="fa-solid fa-pen-to-square"></i>
+                <span>صفحه وهمية</span>
+              </a>
+            </li>
+          </ul>
+        </ul>
+      </div>
+      <!-- End SideBar Menu -->
+
+      <!-- Start Page Content -->
+      <div class="content">
+        <h1 class="content-header">الإسعافات الأولية</h1>
+        <div class="content-container">
+          <div class="table-header">
+            <a href="addInfoAdminPanel.html" class="btn-add">
+              <i class="fa-solid fa-plus"></i>
+              <span>إضافة عنصر</span>
+            </a>
+            <!-- Start Search Bar -->
+            <div class="searcher">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" id="searchInput" placeholder="بحث" />
+              <a href="#">إبحث</a>
+            </div>
+            <!-- End Search Bar -->
+          </div>
+          <!-- Start DataTable -->
+          <table id="example" class="table table-striped table-bordered" style="width: 100%">
+            <thead>
+              <tr>
+                <th></th>
+                <th></th>
+                <th>الإسم</th>
+                <th>الصورة</th>
+                <th>المقال</th>
+                <th>المشاهدات</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="addInfoAdminPanel.html" class="edit-btn">
+                    <i class="fa-solid fa-pen"></i>
+                  </a>
+                </td>
+                <td>
+                  <span class="delete-btn">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </span>
+                </td>
+                <td>إصابات الأسنان</td>
+                <td><img src="Images/1.png" alt="" srcset="" /></td>
+                <td>
+                  تُفقَد الكثير من أسنان الأطفال أو تُفقَد الكثير من أسنان
+                  الأطفال
+                </td>
+                <td>51</td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- End DataTable -->
+        </div>
+      </div>
+      <!-- End Page Content -->
+    </div>
+  </main>
+
+  <!-- Start Scroll To Top -->
+  <span class="scroll-top">
+    <i class="fa-solid fa-angle-up"></i>
+  </span>
+  <!-- End Scroll To Top -->
+
+  <!-- Start Language And DarkMode -->
+  <div class="setting">
+    <i class="fa-solid fa-moon dark-mode"></i>
+  </div>
+
+  <div class="lang">
+    <i class="fa-solid fa-globe"></i>
+    <span class="lang-name">العربية</span>
+    <ul class="lang-menu">
+      <li class="ar active-lang">العربية</li>
+      <li class="en">English</li>
+    </ul>
+  </div>
+  <!-- End Language And DarkMode -->
+
+  <!-- Start Alert Delete -->
+  <div class="dlt-alert">
+    <span class="exit-btn">
+      <i class="fa-solid fa-xmark"></i>
     </span>
-    <!-- End Scroll To Top -->
-
-    <!-- Start Language And DarkMode -->
-    <div class="setting">
-      <i class="fa-solid fa-moon dark-mode"></i>
+    <div class="icon"><i class="fa-regular fa-trash-can"></i></div>
+    <h3>أنت علي وشك حذف العنصر</h3>
+    <p>سيتم حذف كل بيانات هذا العنصر نهائياً <span>هل أنت متأكد؟</span></p>
+    <div class="dlt-btns">
+      <button class="cls">إلغاء</button>
+      <button class="dlt">حذف</button>
     </div>
+  </div>
+  <!-- End Alert Delete -->
+  <div class="alert-overlay"></div>
 
-    <div class="lang">
-      <i class="fa-solid fa-globe"></i>
-      <span class="lang-name">العربية</span>
-      <ul class="lang-menu">
-        <li class="ar active-lang">العربية</li>
-        <li class="en">English</li>
-      </ul>
-    </div>
-    <!-- End Language And DarkMode -->
+  <!-- DataTable JS CDN -->
+  <script src="Js/jquery.js"></script>
+  <script src="JS/jquery_dataTables.js"></script>
+  <script src="JS/dataTables_bootstrap4.js"></script>
+  <script>
+    new DataTable("#data-table");
+  </script>
+  <!-- Home Js File -->
+  <script src="JS/adminGlobal.js"></script>
+  <!-- Home Js File -->
+  <script src="JS/global.js"></script>
+</body>
 
-    <!-- Start Alert Delete -->
-    <div class="dlt-alert">
-      <span class="exit-btn">
-        <i class="fa-solid fa-xmark"></i>
-      </span>
-      <div class="icon"><i class="fa-regular fa-trash-can"></i></div>
-      <h3>أنت علي وشك حذف العنصر</h3>
-      <p>سيتم حذف كل بيانات هذا العنصر نهائياً <span>هل أنت متأكد؟</span></p>
-      <div class="dlt-btns">
-        <button class="cls">إلغاء</button>
-        <button class="dlt">حذف</button>
-      </div>
-    </div>
-    <!-- End Alert Delete -->
-    <div class="alert-overlay"></div>
-
-    <!-- DataTable JS CDN -->
-    <script src="Js/jquery.js"></script>
-    <script src="JS/jquery_dataTables.js"></script>
-    <script src="JS/dataTables_bootstrap4.js"></script>
-    <script>
-      new DataTable("#data-table");
-    </script>
-    <!-- Home Js File -->
-    <script src="JS/adminGlobal.js"></script>
-    <!-- Home Js File -->
-    <script src="JS/global.js"></script>
-  </body>
 </html>
