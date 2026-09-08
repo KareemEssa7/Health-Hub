@@ -1,0 +1,268 @@
+main {
+  padding: 80px 0;
+}
+.location-container {
+  display: flex;
+  align-items: flex-end;
+  column-gap: 5rem;
+  /* flex-wrap: wrap; */
+}
+.swiper {
+  width: 700px;
+  height: 600px;
+  position: relative;
+  /*flex: 1;
+  */
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.2);
+  direction: rtl;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  width: 80px;
+  height: 60px;
+  background-color: var(--background-color);
+  color: var(--light-blue-color);
+  top: auto;
+  bottom: 0;
+}
+.swiper-button-prev {
+  right: auto !important;
+  left: 80px !important;
+  border-radius: 0 20px 0 0;
+}
+.swiper-button-next {
+  left: 0 !important;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 18px;
+  font-weight: 900;
+}
+.swiper-button-next::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 1px;
+  background-color: var(--paragraph-color);
+  right: 0;
+  border-radius: 20px;
+}
+.location-container .hospital-location {
+  /* width: 550px;
+  height: 600px; */
+  flex: 1;
+  color: var(--header-color);
+}
+.location-container .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+.location-container .hospital-location h2 {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+.location-container .hospital-location .description {
+  font-size: 18px;
+  margin-bottom: 20px;
+  width: 80%;
+  font-weight: 500;
+}
+.location-container .hospital-location .info {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.location-container .hospital-location iframe {
+  width: 90%;
+  height: 250px;
+  border-radius: 20px;
+  margin-top: 2rem;
+}
+.hospital-location i {
+  margin-left: 1rem;
+  color: var(--light-blue-color);
+}
+main .container {
+  margin-top: 100px;
+}
+main h1 {
+  color: var(--header-color);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.medicine-slider {
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+  margin-top: 1rem;
+  overflow: hidden;
+  background-color: var(--section-back-color);
+}
+.medicine-content .medicine-slider::-webkit-scrollbar {
+  width: 0;
+}
+.medicine-slider .medicine-card {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 3rem;
+  border-bottom: 1px solid var(--line-color);
+  background-color: var(--background-color);
+  transition-property: transform;
+  transition-duration: var(--main-transition);
+}
+.medicine-slider .medicine-card:hover {
+  transform: scale(1.01);
+  border: 1px solid var(--line-color);
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.2);
+}
+.medicine-slider .medicine-card .medicine-image {
+  max-height: 200px;
+  border-radius: 50px 0px;
+  background: #a0a0a0;
+  box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.2);
+}
+.medicine-slider .medicine-card .card-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+.medicine-slider .medicine-card .card-content .card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.medicine-slider .medicine-card .card-content .card-header h2 {
+  font-size: 20px;
+  color: var(--header-color);
+}
+.medicine-slider .medicine-card .card-content .card-header .medicine-type {
+  background-color: var(--paragraph-color);
+  padding: 0px 1rem;
+  font-size: 14px;
+  color: var(--background-color);
+  border-radius: 50px;
+}
+.medicine-slider .medicine-card .card-content div {
+  color: var(--header-color);
+}
+.medicine-slider .medicine-card .card-content div i {
+  color: var(--paragraph-color);
+  margin-left: 5px;
+}
+.medicine-slider .medicine-card .card-content .date {
+  font-size: 14px;
+  color: var(--paragraph-color);
+  margin-right: 20px;
+}
+.medicine-slider .medicine-card .card-content .book-btn {
+  color: #fff;
+  padding: 7px 50px;
+  margin-top: 1rem;
+  border-radius: 35px 0px;
+  background: linear-gradient(90deg, #2490eb 30.45%, #14467b 198.59%);
+  box-shadow: 2px 4px 20px 0px rgba(0, 0, 0, 0.2);
+  width: fit-content;
+  transition-property: opacity;
+  transition-duration: var(--main-transition);
+}
+.medicine-slider .medicine-card .card-content .book-btn:hover {
+  opacity: 0.8;
+}
+.medicine-slider .medicine-card .card-content .fav {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  font-size: 20px;
+  padding: 3px;
+  color: var(--header-color);
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .swiper {
+    border-radius: 0 0 20px 20px;
+  }
+  .location-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .location-container .hospital-location {
+    width: 970px;
+    margin: 3rem auto 0;
+    padding: 0 1rem;
+  }
+  .location-container .hospital-location iframe {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .location-container .hospital-location {
+    width: 750px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .swiper {
+    width: 100%;
+    height: 300px;
+  }
+  .location-container .hospital-location h2 {
+    font-size: 18px;
+  }
+  .location-container .hospital-location .description,
+  .location-container .hospital-location .info {
+    width: 100%;
+    font-size: 14px;
+  }
+  .location-container .hospital-location iframe {
+    height: 200px;
+  }
+  main .container {
+    margin-top: 50px;
+  }
+  main h1 {
+    font-size: 24px;
+  }
+  .location-container .hospital-location {
+    width: 100%;
+  }
+  .medicine-slider {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .medicine-slider .medicine-card {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+  }
+  .medicine-slider .medicine-card:hover {
+    transform: scale(1);
+    border: 0;
+    border-bottom: 1px solid var(--line-color);
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0);
+  }
+  .medicine-slider .medicine-card .medicine-image {
+    max-height: 150px;
+  }
+  .medicine-slider .medicine-card .card-content .card-header h2 {
+    font-size: 1rem;
+  }
+  .medicine-slider .medicine-card .card-content .card-header .medicine-type {
+    font-size: 10px;
+    padding: 0 10px;
+  }
+  .medicine-slider .medicine-card .card-content div {
+    font-size: 12px;
+  }
+  .medicine-slider .medicine-card .card-content .date {
+    font-size: 10px;
+  }
+  .medicine-slider .medicine-card .card-content .book-btn {
+    margin: 2rem auto 0;
+    font-size: 12px;
+  }
+}

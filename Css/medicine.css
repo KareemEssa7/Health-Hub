@@ -1,0 +1,340 @@
+main {
+  padding-top: 80px;
+}
+.image-slider {
+  margin: 4rem 0;
+}
+.image-slider .slide-container {
+  position: relative;
+  direction: rtl;
+}
+.image-slider .slide-content {
+  padding-bottom: 32px;
+
+  overflow: hidden;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 20px 0px;
+  border-radius: 30px;
+}
+.image-slider .card {
+  border-radius: 25px;
+  height: 400px;
+  text-align: center;
+  padding-top: 1rem;
+}
+.image-slider .card img {
+  height: 100%;
+  width: 70%;
+  border-radius: 20px;
+}
+.image-slider .swiper-button-next,
+.image-slider .swiper-button-prev {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--footer-back-color);
+  color: var(--light-blue-color);
+  box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.2),
+    0 0px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.image-slider .swiper-button-next {
+  left: 1rem;
+}
+.image-slider .swiper-button-prev {
+  right: 1rem;
+}
+.image-slider .swiper-button-next::after,
+.image-slider .swiper-button-prev::after {
+  font-size: 20px;
+  font-weight: 900;
+}
+.swiper-pagination-bullet {
+  background: var(--light-blue-color);
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  transition-property: width;
+  transition-duration: var(--main-transition);
+}
+.swiper-pagination-bullet-active {
+  width: 25px;
+}
+main .description,
+main .exp-date,
+main .amount,
+main .location {
+  position: relative;
+  border: 1px solid var(--line-color);
+  border-radius: 15px;
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+}
+main .description > * {
+  margin: 8px 0;
+}
+main .description .card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+main .description .card-header h2 {
+  color: var(--light-blue-color);
+}
+main .description .card-header .medicine-type {
+  background-color: var(--paragraph-color);
+  padding: 0px 1rem;
+  font-size: 14px;
+  color: var(--background-color);
+  border-radius: 50px;
+}
+main .description .date {
+  font-size: 14px;
+  color: var(--paragraph-color);
+}
+main .description .desc {
+  font-weight: 600;
+  color: var(--header-color);
+}
+main .hospital {
+  color: var(--header-color);
+}
+main .hospital i {
+  color: var(--paragraph-color);
+  font-size: 18px;
+  margin-left: 5px;
+}
+main .description .fav {
+  position: absolute;
+  top: 25px;
+  left: 2rem;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--header-color);
+}
+main .exp-date,
+main .amount {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  color: var(--light-blue-color);
+}
+main .exp-date span,
+main .amount span {
+  font-weight: 600;
+  color: var(--header-color);
+}
+main .location h3 {
+  color: var(--light-blue-color);
+  margin-bottom: 10px;
+}
+
+main .location iframe {
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 2rem;
+}
+main .book-medicine {
+  color: #fff;
+  padding: 7px 65px;
+  margin: 3rem 0 5rem;
+  border-radius: 35px 0px;
+  background: linear-gradient(90deg, #2490eb 30.45%, #14467b 198.59%);
+  box-shadow: 2px 4px 20px 0px rgba(0, 0, 0, 0.2);
+  width: fit-content;
+  transition-property: opacity;
+  transition-duration: var(--main-transition);
+  cursor: pointer;
+}
+main .book-medicine:hover {
+  opacity: 0.8;
+}
+
+/* End Medicine Description Style */
+@media (max-width: 767px) {
+  .image-slider .card {
+    height: 200px;
+  }
+  .image-slider .card img {
+    width: 80%;
+  }
+  .image-slider .swiper-button-next,
+  .image-slider .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+  }
+  .image-slider .swiper-button-next {
+    left: -10px;
+  }
+  .image-slider .swiper-button-prev {
+    right: -10px;
+  }
+  .image-slider .swiper-button-next::after,
+  .image-slider .swiper-button-prev::after {
+    font-size: 16px;
+  }
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+  }
+  .swiper-pagination-bullet-active {
+    width: 20px;
+  }
+  main .description,
+  main .exp-date,
+  main .amount,
+  main .location {
+    padding: 1rem;
+  }
+  main .description h2 {
+    font-size: 18px;
+  }
+  main .description .desc,
+  main .hospital,
+  main .exp-date span,
+  main .amount span {
+    font-size: 14px;
+  }
+  main .exp-date h3,
+  main .amount h3,
+  main .location h3 {
+    font-size: 16px;
+  }
+  main .book-medicine {
+    margin: 3rem auto 5rem;
+    padding: 7px 50px;
+  }
+}
+
+/* Start Adding Alert Style */
+.book-alert {
+  background-color: var(--background-color);
+  position: fixed;
+  bottom: 50%;
+  left: -50%;
+  text-align: center;
+  width: 80%;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  transform: translate(-50%, 50%);
+  transition-property: left;
+  transition-duration: var(--main-transition);
+  max-height: calc(100vh - 4rem);
+  overflow-y: scroll;
+  z-index: 1001;
+}
+.alert-overlay {
+  position: absolute;
+  background-color: var(--layer-background-color);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: none;
+}
+.exit-btn {
+  position: absolute;
+  color: var(--header-color);
+  font-size: 25px;
+  left: 30px;
+  top: 20px;
+  cursor: pointer;
+}
+.book-alert h2 {
+  color: var(--header-color);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.book-alert > span:last-of-type {
+  font-size: 14px;
+  color: var(--paragraph-color);
+}
+.book-alert form {
+  margin-top: 1rem;
+}
+.book-alert .input {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+.book-alert .input:last-of-type {
+  align-items: flex-start;
+}
+.book-alert .input h5 {
+  margin-left: 2rem;
+  width: 160px;
+  color: var(--header-color);
+  font-size: 1rem;
+  text-align: right;
+}
+.book-alert input:not(input[type="submit"]),
+.book-alert textarea {
+  border: 1px solid var(--line-color);
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  caret-color: var(--light-blue-color);
+  font-size: 14px;
+  resize: vertical;
+  direction: rtl;
+  color: var(--header-color);
+}
+.book-alert input:not(input[disabled]),
+.book-alert textarea {
+  background-color: var(--background-color);
+}
+.book-alert input[type="text"]:focus {
+  border-color: var(--light-blue-color);
+}
+
+.book-alert input[type="submit"] {
+  border: none;
+  border-radius: 30px 0px;
+  background: linear-gradient(90deg, #2490eb 30.45%, #14467b 198.59%);
+  box-shadow: 2px 4px 20px 0px rgba(0, 0, 0, 0.2);
+  padding: 8px 40px;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  transition-property: opacity;
+  transition-duration: var(--main-transition);
+  margin: 2rem auto 0;
+}
+.book-alert input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .book-alert {
+    width: calc(100% - 2rem);
+    padding: 1rem;
+  }
+  .home-btn {
+    left: 20px;
+    top: 10px;
+  }
+  .book-alert h2 {
+    font-size: 20px;
+  }
+  .book-alert > span:last-of-type {
+    line-height: 2;
+    display: block;
+  }
+  .book-alert .input {
+    margin: 1rem 0;
+    flex-direction: column;
+  }
+  .book-alert .input:last-of-type {
+    align-items: center;
+  }
+  main .description .card-header .medicine-type {
+    font-size: 10px;
+    padding: 0 10px;
+  }
+  .book-alert .input h5 {
+    margin: 0 0 10px;
+    width: fit-content;
+  }
+}
+
+/* End Adding Alert Style */

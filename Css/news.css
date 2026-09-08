@@ -1,0 +1,101 @@
+/* Start Main Style */
+main {
+  padding-top: 200px;
+}
+main .page-header {
+  font-size: 40px;
+  font-weight: 900;
+  color: var(--dark-blue-color);
+  margin-bottom: 2rem;
+}
+.search-bar {
+  top: 120px;
+}
+
+.news-cards .new-icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: -10px;
+  top: -10px;
+  color: #fff;
+  font-weight: 600;
+  transform: rotate(-30deg);
+}
+.news-cards .new-icon i {
+  font-size: 55px;
+  position: absolute;
+  color: red;
+  z-index: -1;
+}
+
+.news-cards .news-card {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  border-radius: 20px;
+  padding: 1rem;
+  box-shadow: 0px 0px 15px 0px #00000033;
+  margin: 2rem 0;
+}
+.news-cards .news-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.news-cards .news-card .hos-desc {
+  display: flex;
+  flex-direction: column;
+}
+.news-cards .news-card .hos-desc .hos-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--light-blue-color);
+  display: flex;
+}
+.news-cards .news-card .hos-desc .hos-title a {
+  text-decoration: underline;
+  color: var(--light-blue-color);
+}
+.news-cards .news-card .hos-desc .hos-loc {
+  font-size: 14px;
+  color: var(--header-color);
+}
+.news-cards .news-card .hos-desc .hos-loc i {
+  color: var(--paragraph-color);
+}
+.news-cards .news-card .hos-desc .hos-date {
+  font-size: 14px;
+  color: var(--paragraph-color);
+}
+.news-cards .news-card .hos-desc .description {
+  font-weight: 500;
+  margin: 2rem 0;
+  color: var(--header-color);
+}
+
+@media (max-width: 768px) {
+  main .page-header {
+    text-align: center;
+    font-size: 25px;
+  }
+  .news-cards .news-card img {
+    width: 45px;
+    height: 45px;
+  }
+  .news-cards .news-card .hos-desc .hos-title {
+    font-size: 14px;
+  }
+  .news-cards .news-card .hos-desc .hos-date,
+  .news-cards .news-card .hos-desc .hos-loc {
+    font-size: 12px;
+  }
+  .news-cards .new-icon {
+    left: 5px;
+    font-size: 12px;
+  }
+  .news-cards .new-icon i {
+    font-size: 45px;
+  }
+}

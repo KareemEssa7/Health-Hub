@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health Hub || لوحة التحكم</title>
+
+    <!-- Page Logo -->
+    <link rel="icon" type="image/x-icon" href="Images/Favicon.png" />
+
+    <!-- Font Awesome Page -->
+    <link rel="stylesheet" href="Css/all.min.css" />
+    <!-- Global Style Page -->
+    <link rel="stylesheet" href="Css/global.css" />
+    <!-- Main Style Page -->
+    <link rel="stylesheet" href="Css/home.css" />
+    <!-- Main Style Page -->
+    <link rel="stylesheet" href="Css/adminGlobal.css" />
+    <!-- Alerts Style Page -->
+    <link rel="stylesheet" href="Css/editInfoAdmin.css" />
+  </head>
+  <body>
+    <main>
+      <!-- Start Header -->
+      <header>
+        <div class="container">
+          <div class="burger-list">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <img class="logo" src="Images/Logo.png" alt="Health Hub Logo" />
+          <ul class="menu-bar">
+            <li><a href="home.html">الرئيسية</a></li>
+            <li>
+              <a href="firstAid.html">الإسعافات الأولية</a>
+              <i class="fa-solid fa-angle-down"></i>
+              <div class="drop-down-menu">
+                <ul>
+                  <li><a href="FirstAidView.html">الإختناق</a></li>
+                  <li><a href="FirstAidView.html">الجروح</a></li>
+                  <li><a href="FirstAidView.html">الحروق</a></li>
+                  <li><a href="FirstAidView.html">عضة الحيوانات</a></li>
+                  <li><a href="FirstAidView.html">الإنعاش القلبي الرئوي</a></li>
+                </ul>
+                <ul>
+                  <li><a href="FirstAidView.html">الإختناق</a></li>
+                  <li><a href="FirstAidView.html">الجروح</a></li>
+                  <li><a href="FirstAidView.html">الكسور</a></li>
+                  <li><a href="FirstAidView.html">عضة الحيوانات</a></li>
+                  <li><a href="FirstAidView.html">الإنعاش القلبي الرئوي</a></li>
+                </ul>
+                <a href="firstAid.html"
+                  >المزيد<i class="fa-solid fa-angles-left"></i
+                ></a>
+              </div>
+            </li>
+            <li><a href="donateBlood.html">التبرع بالدم</a></li>
+            <li><a href="donateMedicine.html">التبرع بالأدوية</a></li>
+          </ul>
+          <div class="login-btns">
+            <a href="register.html">إنشاء حساب</a>
+            <a href="login.html">تسجيل الدخول</a>
+          </div>
+          <div class="user">
+            <div class="user-info">
+              <i class="fa-solid fa-angle-down"></i>
+              <span>Mohamed Elsmin</span>
+              <img src="Images/User.png" alt="User Image" />
+            </div>
+            <ul>
+              <li>
+                <a href="aidAdminPanel.html">
+                  <i class="fa-solid fa-sliders"></i>
+                  لوحة التحكم
+                </a>
+              </li>
+              <li>
+                <a href="adminPage.html">
+                  <i class="fa-solid fa-user"></i>
+                  الصفحة الشخصية
+                </a>
+              </li>
+              <li>
+                <a href="favourite.html">
+                  <i class="fa-regular fa-heart"></i>
+                  المفضلة
+                </a>
+              </li>
+              <li>
+                <form action="">
+                  <button>
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    تسجيل الخروج
+                  </button>
+                </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- End Header -->
+      <div class="main-page">
+        <!-- Start SideBar Menu -->
+        <div class="sidebar">
+          <div class="header">
+            <h4>لوحة التحكم</h4>
+            <div class="sidebar-buger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <ul class="sidebar-links">
+            <li class="admin-page">
+              <a href="adminPage.html">
+                <span>الصفحة الشخصية</span>
+                <img src="Images/User.png" alt="User Image" />
+              </a>
+            </li>
+            <li id="main-list">
+              <div class="link-title">
+                <i class="fa-solid fa-suitcase-medical"></i>
+                <span>الإسعافات الأولية</span>
+              </div>
+              <i class="fa-solid fa-angle-left"></i>
+            </li>
+            <ul class="sub-lists">
+              <li>
+                <a href="aidAdminPanel.html">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                  <span>صفحه وهمية</span>
+                </a>
+              </li>
+              <li>
+                <a href="aidAdminPanel.html">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                  <span>صفحه وهمية</span>
+                </a>
+              </li>
+            </ul>
+            <li id="main-list">
+              <div class="link-title">
+                <i class="fa-solid fa-suitcase-medical"></i>
+                <span>التبرع بالأدوية</span>
+              </div>
+              <i class="fa-solid fa-angle-left"></i>
+            </li>
+            <ul class="sub-lists">
+              <li>
+                <a href="medicineAdminPanel.html">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                  <span>صفحه وهمية</span>
+                </a>
+              </li>
+              <li>
+                <a href="medicineAdminPanel.html">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                  <span>صفحه وهمية</span>
+                </a>
+              </li>
+            </ul>
+          </ul>
+        </div>
+        <!-- End SideBar Menu -->
+
+        <!-- Start Page Content -->
+        <div class="content">
+          <h1 class="content-header">البيانات الشخصية</h1>
+          <div class="content-container">
+            <!-- Start Alert Adding -->
+            <div class="edit-alert">
+              <a href="adminPage.html" class="home-btn">
+                <i class="fa-solid fa-arrow-left"></i>
+              </a>
+              <h3>تعديل بياناتك</h3>
+              <span>قم بتعديل بياناتك من هنا </span>
+              <form action="">
+                <div class="input">
+                  <h5>الإسم</h5>
+                  <input type="text" required />
+                </div>
+                <div class="input">
+                  <h5>البريد الإلكتروني</h5>
+                  <input type="email" required />
+                </div>
+                <div class="input">
+                  <h5>الرقم القومي</h5>
+                  <input type="text" required />
+                </div>
+                <div class="input">
+                  <h5>كلمة المرور</h5>
+                  <input type="text" required />
+                </div>
+                <div class="input">
+                  <h5>المدينة</h5>
+                  <input type="text" required />
+                </div>
+                <div class="input">
+                  <h5>رقم الهاتف</h5>
+                  <input type="tel" required />
+                </div>
+                <input type="submit" value="إضافة" />
+              </form>
+            </div>
+            <!-- End Alert Adding -->
+          </div>
+        </div>
+        <!-- End Page Content -->
+      </div>
+    </main>
+
+    <!-- Start Footer -->
+    <footer>
+      <div class="copyright">
+        حقوق النشر &copy; 2024 .Health Hub hh كل الحقوق محفوظة.
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Scroll To Top -->
+    <span class="scroll-top">
+      <i class="fa-solid fa-angle-up"></i>
+    </span>
+    <!-- End Scroll To Top -->
+
+    <!-- Start Language And DarkMode -->
+    <div class="setting">
+      <i class="fa-solid fa-moon dark-mode"></i>
+    </div>
+
+    <div class="lang">
+      <i class="fa-solid fa-globe"></i>
+      <span class="lang-name">العربية</span>
+      <ul class="lang-menu">
+        <li class="ar active-lang">العربية</li>
+        <li class="en">English</li>
+      </ul>
+    </div>
+    <!-- End Language And DarkMode -->
+
+    <!-- Home Js File -->
+    <script src="JS/adminGlobal.js"></script>
+    <!-- Home Js File -->
+    <script src="JS/global.js"></script>
+  </body>
+</html>
